@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust</title>
+</head>
+<body>
+    <h1> WanderLust</h1>
+    <h3>All Listings</h3>
+    <form action="/listings/new" method="GET">
+        <button>
+            create new listing
+        </button>
+    </form>
+    <%  for(Listings of allListings)  { %>
+    <div> 
+        <h2><a href="listings/<%= Listings._id %>"><%= Listings.title %></a></h2>
+        <p><%= Listings.description %></p>
+        <p>Price: ₹ <%= Listings.price.toLocaleString("en-IN") %></p>
+        <p> Location:  <%= Listings.location %></p>
+        <p><%= Listings.country %></p>
+        <img src=<%= Listings.image.url%> alt="Listing Image" style="width:200px;height:150px;">
+    </div>
+    <hr>
+<% } %>
+</body>
+</html>
+
