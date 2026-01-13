@@ -49,7 +49,7 @@ app.get("/listings/:id" , async(req ,res)=>{
 
 // create route : this will create a new listing in the database
 app.post("/listings" , async(req ,res)=>{
-    // res.send(req.body);
+    res.send(req.body);
     
 });
 
