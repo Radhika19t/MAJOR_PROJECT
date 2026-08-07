@@ -164,10 +164,6 @@ Add screenshots of
 
 **Radhika Thakare**
 
-GitHub: https://github.com/YOUR_GITHUB_USERNAME
-
-LinkedIn: https://linkedin.com/in/YOUR_LINKEDIN
-
 ---
 
 ## ⭐ If you like this project
