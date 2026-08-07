@@ -1,36 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WanderLust</title>
-</head>
-<body>
-    <h1> WanderLust</h1>
-    <h3>All Listings</h3>
-    <form action="/listings/new" method="GET">
-        <button>
-            create new listing
-        </button>
-    </form>
-    <%  for(Listings of allListings)  { %>
-    <div> 
-        <h2><a href="listings/<%= Listings._id %>"><%= Listings.title %></a></h2>
-        <p><%= Listings.description %></p>
-        <p>Price: ₹ <%= Listings.price.toLocaleString("en-IN") %></p>
-        <p> Location:  <%= Listings.location %></p>
-        <p><%= Listings.country %></p>
-        
-         <% if (Listings.image && Listings.image.url) { %>
-  <img src="<%= Listings.image.url %>" alt="Listing Image" style="width:200px;height:150px;">
-<% } else { %>
-  <img src="/images/default.jpg" alt="No Image Available" style="width:200px;height:150px;">
-<% } %>
+<% layout("/layouts/boilerplate") %>
 
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>All Listings</h2>
 
-    </div>
-    <hr>
-<% } %>
-</body>
-</html>
+    <a href="/listings/new" class="btn btn-dark">
+        + Create New Listing
+    </a>
+</div>
 
+<div class="row">
+
+    <% for(let listing of allListings){ %>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+
+            <a href="/listings/<%= listing._id %>" class="listing-link">
+
+                <div class="card listing-card">
+
+                    <img
+                        src="<%= listing.image.url %>"
+                        class="card-img-top listing-img"
+                        alt="Listing Image">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            <%= listing.title %>
+                        </h5>
+
+                        <p class="card-text">
+                            ₹ <%= listing.price.toLocaleString("en-IN") %>
+                        </p>
+
+                        <p class="text-muted">
+                            <%= listing.location %>, <%= listing.country %>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    <% } %>
+
+</div>

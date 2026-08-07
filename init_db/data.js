@@ -1,28 +1,4 @@
-const sampleListings = [
-  {
-    title: "Cozy Beachfront Cottage",
-    description:
-      "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1500,
-    location: "Malibu",
-    country: "United States",
-  },
-  {
-    title: "Modern Loft in Downtown",
-    description:
-      "Stay in the heart of the city in this stylish loft apartment. Perfect for urban explorers!",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1200,
-    location: "New York City",
-    country: "United States",
-  },
+const sampleListings = [ 
   {
     title: "Mountain Retreat",
     description:
@@ -346,6 +322,126 @@ const sampleListings = [
     price: 1800,
     location: "Costa Rica",
     country: "Costa Rica",
+  },
+  {
+    title: "Cozy Beachfront Cottage",
+    description:
+      "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1500,
+    location: "Malibu",
+    country: "United States",
+  },
+  {
+    title: "Mountain View Retreat",
+    description:
+      "Nestled in the mountains, this retreat offers breathtaking views and a peaceful environment for a memorable stay.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1518602164578-cd0074062767?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 3200,
+    location: "Aspen",
+    country: "United States",
+  },
+  {
+    title: "Chic Urban Loft",
+    description:
+      "Stylish loft in the heart of the city, perfect for exploring local attractions, dining, and nightlife.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bG9mdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2800,
+    location: "New York",
+    country: "United States",
+  },
+  {
+    title: "Rustic Countryside Farmhouse",
+    description:
+      "Experience the charm of country living in this rustic farmhouse, surrounded by rolling fields and fresh air.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFybWhvdXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1800,
+    location: "Nashville",
+    country: "United States",
+  },
+  {
+    title: "Desert Oasis Villa",
+    description:
+      "A stunning villa surrounded by desert landscapes, complete with a private pool and panoramic sunset views.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzZXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 4500,
+    location: "Scottsdale",
+    country: "United States",
+  },
+  {
+    title: "Lakeside Log Cabin",
+    description:
+      "Unwind at this cozy log cabin right on the water's edge, ideal for fishing, kayaking, and relaxing evenings.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FiaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2200,
+    location: "Lake Tahoe",
+    country: "United States",
+  },
+  {
+    title: "Historic Downtown Brownstone",
+    description:
+      "Stay in a beautifully restored 19th-century brownstone, blending historic charm with modern comfort.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJvd25zdG9uZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2600,
+    location: "Boston",
+    country: "United States",
+  },
+  {
+    title: "Tropical Rainforest Bungalow",
+    description:
+      "Immerse yourself in nature at this secluded bungalow surrounded by lush rainforest and exotic wildlife.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVuZ2Fsb3d8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 3400,
+    location: "Kauai",
+    country: "United States",
+  },
+  {
+    title: "Snowy Alpine Chalet",
+    description:
+      "A warm and inviting chalet with a crackling fireplace, perfect for a snowy mountain escape.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1517816428104-797678c7cf0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhbGV0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 5200,
+    location: "Park City",
+    country: "United States",
+  },
+  {
+    title: "Coastal Cliffside Cabin",
+    description:
+      "Perched above dramatic ocean cliffs, this cabin offers unforgettable sunrise and sunset views.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xpZmZ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+    },
+    price: 3900,
+    location: "Big Sur",
+    country: "United States",
   },
 ];
 
